@@ -10,13 +10,12 @@ set "basePad1=_0"
 set "fileType=.PAK"
 set "maxIterations=1280"
 
-set "oldName=%%F"
-set "folderName=!oldName:~0,-4!"
+set "folderName=SHAPES"
 set "fileName=!folderName!\!folderName!"
 
-mkdir %folderName%
+echo Reading SHAPES, this may take a few minutes
 
-echo Reading %%F, this may take a few minutes
+mkdir "SHAPES"
 
 for /l %%i in (0,1,%maxIterations%) do (	
     if %%i LEQ 9 (
@@ -27,7 +26,7 @@ for /l %%i in (0,1,%maxIterations%) do (
         set "finalString=!fileName!%basePad1%%%i%fileType%"
     ) else set "finalString=!fileName!%baseString%%%i%fileType%"
   
-    start "" /wait "pakextract.exe" "SHAPES90.PAK" %%i !finalString!  
+    start "" /wait "pakextract.exe" "SHAPES.PAK" %%i !finalString!  
 )
 
 :: we need to make 1st layer extractors for every sprite pak (from files in data/SPRITES)
