@@ -11,7 +11,10 @@ set "fileType=.PAK"
 set "maxIterations=1280"
 
 set "oldName=%%F"
-set "fileName=!oldName:~0,-4!"
+set "folderName=!oldName:~0,-4!"
+set "fileName=!folderName!\!folderName!"
+
+mkdir %folderName%
 
 echo Reading %%F, this may take a few minutes
 
