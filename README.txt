@@ -34,6 +34,7 @@ INSTRUCTIONS:
 	- use the Palette Tools -> Load Palette (PSP ascii) option to load PSP_Custom_MC.PAL to get a better color palette
 		* the color palette is in a text format so it is simple to make your own!
 6. Use BatchExtractSHAPES_PAKToPAKs.bat to extract first part of vehicles and objects sprites
+	* i realized late that there are a lot of empty PAKs in this one... check the PAK file size before extracting them all to shp!
 7. Use BatchExtractSHAPES90_PAKtoPAKs.bat to extract rest of object sprites
 	- all of these extractors will create their own file structure 
 	- for both SHAPES and SHAPES90 folders, we will not need BatchRemoveBytesIteratesThruFolders
