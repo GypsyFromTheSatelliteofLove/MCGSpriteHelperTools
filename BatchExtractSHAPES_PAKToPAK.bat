@@ -10,10 +10,12 @@ set "basePad1=_0"
 set "fileType=.PAK"
 set "maxIterations=1280"
 
-set "oldName=%%F"
-set "fileName=!oldName:~0,-4!"
+set "folderName=SHAPES"
+set "fileName=!folderName!\!folderName!"
 
-echo Reading %%F, this may take a few minutes
+echo Reading SHAPES, this may take a few minutes
+
+mkdir "SHAPES"
 
 for /l %%i in (0,1,%maxIterations%) do (	
     if %%i LEQ 9 (
