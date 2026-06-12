@@ -1,5 +1,5 @@
 :: This Extracts the first file in the folder with a .PAK extension- creates SHP files
-:: loops for 800 times since this is the max I have found inside a PAK file- slow tho, so you can modify maxIterations
+:: loops for 800 times this is close to the max I have found inside a PAK file- slow tho, so you can modify maxIterations
 @echo off
 setlocal EnableDelayedExpansion
 
