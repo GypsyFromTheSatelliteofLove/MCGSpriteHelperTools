@@ -41,6 +41,10 @@ INSTRUCTIONS:
 		* only mechs needed the extra 6 bytes
 	- copy PakExtract.exe and BatchExtractPAKToSHP.bat to the SHAPES and SHAPES90 folders
 	- run the batch file and youre pretty much done... tho this one takes a whole while as SHAPES has 1000+ entries
+8. ADDED the LowResExtractAllMechPAKsToPak.batch since i realized the mechs with 90 on them are super big!
+	* as an example, animations can reach up to the 100,000s and having 151x151 sprites might be excessive!
+9. UPDATED the BatchRemoveBytesIteratesThruFolders.batch as it is the slowest... set a check for skipping empty files
+	* IT IS STILL SLOW! If someone can comeup with an optimized solution that would be best!
 
 IF a file is skipped, you can still use PakExtract.exe manually; in cmd.exe, go to the folder where PakExtract.exe is then
 run it with arguments like so:
