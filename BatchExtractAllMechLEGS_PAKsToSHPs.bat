@@ -1,5 +1,5 @@
 :: This Extracts all the files in the folder with a .PAK extension and extracts .shp files
-:: loops for 200 times since this is the max I have found for legs inside a PAK file- slow tho, so you can modify maxIterations
+:: loops for 200 times this is close to the max I have found for legs inside a PAK file- slow tho, so you can modify maxIterations
 @echo off
 setlocal EnableDelayedExpansion
 
