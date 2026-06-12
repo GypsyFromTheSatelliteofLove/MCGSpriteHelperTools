@@ -1,5 +1,5 @@
 :: This Extracts all the files in the folder with a .PAK extension- creates more PAK files
-:: loops for 1280 times since this is the max I have found inside a PAK file- slow tho, so you can modify maxIterations
+:: loops for 25 times since mech files only go to 23
 @echo off
 setlocal EnableDelayedExpansion
 
@@ -8,7 +8,7 @@ set "basePad3=_000"
 set "basePad2=_00"
 set "basePad1=_0"
 set "fileType=.PAK"
-set "maxIterations=50"
+set "maxIterations=25"
 
 for %%F in (LARMS90.PAK LEGS90.PAK RARMS90.PAK TORSOS90.PAK) do (
     set "oldName=%%F"
